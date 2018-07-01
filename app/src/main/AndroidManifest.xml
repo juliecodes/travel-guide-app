@@ -17,6 +17,10 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".SiteDetailsPage"
+            android:label="Site Details" />
+
     </application>
 
 </manifest>

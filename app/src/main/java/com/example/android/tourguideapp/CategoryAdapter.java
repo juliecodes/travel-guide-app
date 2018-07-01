@@ -35,11 +35,11 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new MuralsFragment();
         } else if (position == 1) {
-            return new MuralsFragment();
+            return new MemorialsFragment();
         } else if (position == 2) {
-            return new MuralsFragment();
+            return new ArtMuseumsFragment();
         } else {
-            return new MuralsFragment();
+            return new UniquePlacesFragment();
         }
     }
 
@@ -54,13 +54,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         if (position == 0) {
-            return mContext.getString(R.string.murals);
+            return mContext.getString(R.string.category_murals);
         } else if (position == 1) {
-            return mContext.getString(R.string.murals);
+            return mContext.getString(R.string.category_memorials);
         } else if (position == 2) {
-            return mContext.getString(R.string.murals);
+            return mContext.getString(R.string.category_art_places);
         } else {
-            return mContext.getString(R.string.murals);
+            return mContext.getString(R.string.category_unique);
         }
     }
 }

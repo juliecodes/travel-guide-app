@@ -32,54 +32,59 @@ public class Site {
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
-   private String mArtist;
+   private String mMoreInfo;
+
+   private String mUrl;
 
 
     /**
      * Create a new Site object.
      *
-     * @param title is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param location is the word in the Miwok language
+     * @param title is the title of the site
+     * @param location is the locaiton of the site
+     * @param imageResourceId is the photo for the site.
+     * @param url is the website or map location of the site
      *
      *
      */
-    public Site(String title, String location, int imageResourceId) {
+    public Site(String title, String location, int imageResourceId, String url) {
         mTitle = title;
         mLocation = location;
        mImageResourceId = imageResourceId;
+       mUrl = url;
 
     }
 
     /**
-     * Create a new Site object.
+     * Create a new Site object for murals category.
      *
-     * @param title is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param location is the word in the Miwok language
-     *
-     *  @param imageResourceId is the image for that word
+     * @param title is the title of the site
+     * @param location is the locaiton of the site
+     * @param imageResourceId is the photo for the site.
+     * @param url is the website or map location of the site
+     * @param moreInfo is more information for the site.
      *
      *
      */
-    public Site(String title, String location, int imageResourceId, String artist) {
+    public Site(String title, String location, int imageResourceId, String url, String moreInfo) {
         mTitle = title;
         mLocation = location;
         mImageResourceId = imageResourceId;
-        mArtist = artist;
+        mUrl = url;
+        mMoreInfo = moreInfo;
 
     }
 
 
     /**
-     * Get the default translation of the word.
+     * Get the name of the site.
      */
     public String getTitle() {
         return mTitle;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the location of the site.
      */
     public String getLocation() {
         return mLocation;
@@ -88,18 +93,24 @@ public class Site {
 
 
     /**
-     * Get the image of the word.
+     * Get the image of the site.
      */
     public int getImageResourceId() {
         return mImageResourceId;
     }
 
     /**
-     * Returns whether or not there is an image for this word.
+     * Returns whether or not there is an image for this site.
      */
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
+    /** Get the URL or map url of the current site. */
+    public String getUrl() { return mUrl; }
 
+    public String getMoreInfo() { return mMoreInfo; }
+
+    /** Returns whether or not there is more info for this site. */
+    public boolean hasMoreInfo() { return mMoreInfo != null; }
 }

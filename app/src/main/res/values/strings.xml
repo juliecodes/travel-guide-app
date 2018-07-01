@@ -15,10 +15,10 @@
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Travel Guide App</string>
-    <string name="murals">Murals</string>
-    <string name="art_places">Art Galleries and Museums</string>
-    <string name="free_events">Free Gatherings</string>
-    <string name="cultural_events">Cultural Events</string>
+    <string name="category_murals">Murals</string>
+    <string name="category_art_places">Art Places</string>
+  <string name="category_memorials">Memorials</string>
+<string name="category_unique">Unique DC</string>
 
     <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_phrases">Phrases</string>
