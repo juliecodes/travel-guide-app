@@ -34,21 +34,21 @@ public class UniquePlacesFragment extends Fragment {
 
         // Create a list of sites
         final ArrayList<Site> sites = new ArrayList<Site>();
-        sites.add(new Site("National Arboretum", "1213 U St NW", R.drawable.color_red, "https://goo.gl/maps/SvhAX8Yh7ao", "Artists: Aniekan Udofia with Mia Duval"));
-        sites.add(new Site("Every Day I See Something New", "1742 Kalorama Rd NW", R.drawable.color_red, "https://goo.gl/maps/eCMgW7xPaXH2", "Artist: Cita Sadeli CHELOVE"));
-        sites.add(new Site("Mermaid", "635 North Carolina Ave SE", R.drawable.color_red, "https://goo.gl/maps/atEhRv7n5V12","Artist: Aniekan Udofia"));
-        sites.add(new Site("Marvin 2014", "S Street NW and 7th Street NW", R.drawable.color_red, "https://goo.gl/maps/KBHKk8dPPL32", "Artist: Aneikan Udofo"));
-        sites.add(new Site("Watermelon House", "1112 Q St NW", R.drawable.color_red, "https://goo.gl/maps/zWVkXGbhnVu","Artist: house owners"));
-        sites.add(new Site("Angel Wings", "2015 Massachusetts Ave NW", R.drawable.color_red, "https://goo.gl/maps/smwtuGkNaDp","Artist: Colette Miller \n\nAt the Embassy Row Hotel"));
-        sites.add(new Site("Presidential mural", "1984 Calvert Street NW", R.drawable.color_red, "https://goo.gl/maps/RyRym1pdKa82","Artist: Karla Cecilia Rodas Cortez \"Karlisima.\""));
-        sites.add(new Site("Space is the Place", "Blagden Alley", R.drawable.color_red, "https://goo.gl/maps/JzrWKfNzT3n","Artists: Aniekan Udofia with Mia Duval"));
-        sites.add(new Site("Afro-Colombian Mural: Currulao y Desplazamiento", "1344 U Street NW", R.drawable.color_red, "https://goo.gl/maps/fTxtGZaJ5B72","Artist: Joel Bergner"));
-        sites.add(new Site("Shop Small 2014", "Near Adams Morgan garage", R.drawable.color_red, "https://goo.gl/maps/jFbkF1amTQC2","Artist: Aniekan Udofia \n\nAlley between Amsterdam Falafelshop and Little Shop of Flowers."));
+        sites.add(new Site("National Arboretum", "3501 New York Ave NE", R.drawable.color_red, "https://usna.usda.gov/", "Gorgeous outdoor place with giant columns and bonsai garden."));
+        sites.add(new Site("Meridian Hill Park", "16th St NW & W Street NW", R.drawable.color_red, "https://www.nps.gov/places/meridian-hill-park.htm", "Beautiful park featuring large water structure."));
+        sites.add(new Site("Theodore Roosevelt Island", "Theodore Roosevelt Island", R.drawable.color_red, "https://www.nps.gov/this/index.htm","Island south of the DC mainland."));
+        sites.add(new Site("The Einstein Memorial", "2101 Constitution Ave NW", R.drawable.color_red, "http://www.nasonline.org/about-nas/visiting-nas/nas-building/the-einstein-memorial.html", "Giant Einstein sculpture."));
+        sites.add(new Site("Washington National Cathedral", "3101 Wisconsin Ave. NW", R.drawable.color_red, "https://cathedral.org/","Beautiful cathedral."));
+        sites.add(new Site("The Wharf DC", "1100 Maine Ave SW", R.drawable.color_red, "https://www.wharfdc.com/","Cute area featuring old fisherman market as well as swings and a firepit. Shopping, dining, and entertainment, too."));
+        sites.add(new Site("Japanese Lantern", "9810 Kutz Bridge", R.drawable.color_red, "https://en.wikipedia.org/wiki/Japanese_Lantern_(Washington,_D.C.)","This Japanese lantern was a gift from Japan and is lit during the annual Cherry Blossom Festival."));
+        sites.add(new Site("Tidal Basin (Cherry Blossom Season)", "Tidal Basin", R.drawable.color_red, "https://www.nps.gov/articles/dctidalbasin.htm","Come to the Tidal Basin during the Cherry Blossom Festival."));
+        sites.add(new Site("Blind Whino", "700 Delaware Ave SW", R.drawable.color_red, "https://www.blindwhino.org/","Former church turned art gallery space. It is painted from floor to ceiling with murals, inside and out."));
+        sites.add(new Site("Yards Park", "355 Water St SE", R.drawable.color_red, "https://www.theyardsdc.com/",""));
 
 
         // Create an {@link SiteAdapter}, whose data source is a list of {@link Site}s. The
         // adapter knows how to create list items for each item in the list.
-        SiteAdapter adapter = new SiteAdapter(getActivity(), sites, R.color.category_colors);
+        SiteAdapter adapter = new SiteAdapter(getActivity(), sites, R.color.category_unique);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

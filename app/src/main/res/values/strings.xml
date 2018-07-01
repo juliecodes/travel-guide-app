@@ -16,7 +16,7 @@
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Travel Guide App</string>
     <string name="category_murals">Murals</string>
-    <string name="category_art_places">Art Places</string>
+    <string name="category_art_places">Art</string>
   <string name="category_memorials">Memorials</string>
 <string name="category_unique">Unique DC</string>
 

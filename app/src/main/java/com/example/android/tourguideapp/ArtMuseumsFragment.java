@@ -34,21 +34,20 @@ public class ArtMuseumsFragment extends Fragment {
 
         // Create a list of sites
         final ArrayList<Site> sites = new ArrayList<Site>();
-        sites.add(new Site("National Gallery of Art", "1213 U St NW", R.drawable.color_red, "https://goo.gl/maps/SvhAX8Yh7ao", "Most extensive art museum in DC."));
-        sites.add(new Site("Hirshhorn Museum and Sculpture Garden", "1742 Kalorama Rd NW", R.drawable.color_red, "https://goo.gl/maps/eCMgW7xPaXH2", "Interesting installations"));
-        sites.add(new Site("Philips Collection", "635 North Carolina Ave SE", R.drawable.color_red, "https://goo.gl/maps/atEhRv7n5V12","Renoir's famous painting is here. Lots of Impressionist paintings."));
-        sites.add(new Site("Renwick Gallery", "S Street NW and 7th Street NW", R.drawable.color_red, "https://goo.gl/maps/KBHKk8dPPL32", "One of my favorite."));
-        sites.add(new Site("National Portrait Gallery", "1112 Q St NW", R.drawable.color_red, "https://goo.gl/maps/zWVkXGbhnVu","Artist: house owners"));
-        sites.add(new Site("American Museum of Art", "2015 Massachusetts Ave NW", R.drawable.color_red, "https://goo.gl/maps/smwtuGkNaDp","Artist: Colette Miller \n\nAt the Embassy Row Hotel"));
-        sites.add(new Site("National Museum of Women in the Arts", "1984 Calvert Street NW", R.drawable.color_red, "https://goo.gl/maps/RyRym1pdKa82","Artist: Karla Cecilia Rodas Cortez \"Karlisima.\""));
-        sites.add(new Site("Long View Gallery", "Blagden Alley", R.drawable.color_red, "https://goo.gl/maps/JzrWKfNzT3n","Artists: Aniekan Udofia with Mia Duval"));
-        sites.add(new Site("Touchstone Gallery", "1344 U Street NW", R.drawable.color_red, "https://goo.gl/maps/fTxtGZaJ5B72","Artist: Joel Bergner"));
-        sites.add(new Site("Joan Hisoaka Healing Arts Gallery", "Near Adams Morgan garage", R.drawable.color_red, "https://goo.gl/maps/jFbkF1amTQC2","Artist: Aniekan Udofia \n\nAlley between Amsterdam Falafelshop and Little Shop of Flowers."));
+        sites.add(new Site("National Gallery of Art", "6th & Constitution Ave NW", R.drawable.color_red, "https://www.nga.gov/", "Most extensive art museum in DC."));
+        sites.add(new Site("Hirshhorn Museum and Sculpture Garden", "Independence Avenue at Seventh Street SW", R.drawable.color_red, "https://hirshhorn.si.edu/", "Interesting installations."));
+        sites.add(new Site("The Phillips Collection", "1600 21st St NW", R.drawable.color_red, "http://www.phillipscollection.org/","Renoir's famous painting is here. Lots of impressionist paintings."));
+        sites.add(new Site("Renwick Gallery", "1661 Pennsylvania Ave NW", R.drawable.color_red, "https://americanart.si.edu/visit/renwick", "Interesting installations."));
+        sites.add(new Site("National Portrait Gallery", "8th St NW & F St NW", R.drawable.color_red, "http://npg.si.edu/home/national-portrait-gallery","Portraits of famous people, presidents, and celebrities."));
+        sites.add(new Site("Smithsonian American Art Museum", "F St NW & 8th St NW", R.drawable.color_red, "https://americanart.si.edu/","Great art from American artists, especially the modern art section."));
+        sites.add(new Site("National Museum of Women in the Arts", "1250 New York Ave NW", R.drawable.color_red, "https://nmwa.org/","Thought-provoking art by women artists."));
+        sites.add(new Site("Dupont Underground", "19 Dupont Cir NW", R.drawable.color_red, "https://www.dupontunderground.org/","Former subway station turned gallery space."));
+        sites.add(new Site("Artechouse", "1238 Maryland Ave SW", R.drawable.color_red, "https://www.usa.artechouse.com/","Where art and technology merge. Full scale interactive video installations."));
 
 
         // Create an {@link SiteAdapter}, whose data source is a list of {@link Site}s. The
         // adapter knows how to create list items for each item in the list.
-        SiteAdapter adapter = new SiteAdapter(getActivity(), sites, R.color.category_colors);
+        SiteAdapter adapter = new SiteAdapter(getActivity(), sites, R.color.category_art);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

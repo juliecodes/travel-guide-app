@@ -34,22 +34,21 @@ public class MemorialsFragment extends Fragment {
 
         // Create a list of sites
         final ArrayList<Site> sites = new ArrayList<Site>();
-        sites.add(new Site("Washington Monument", "1213 U St NW", R.drawable.color_red, "https://goo.gl/maps/SvhAX8Yh7ao", "Artists: Aniekan Udofia with Mia Duval"));
-        sites.add(new Site("Lincoln Memorial", "1742 Kalorama Rd NW", R.drawable.color_red, "https://goo.gl/maps/eCMgW7xPaXH2", "Artist: Cita Sadeli CHELOVE"));
-        sites.add(new Site("Vietnam Veterans Memorial", "635 North Carolina Ave SE", R.drawable.color_red, "https://goo.gl/maps/atEhRv7n5V12","Artist: Aniekan Udofia"));
-        sites.add(new Site("Korean War", "S Street NW and 7th Street NW", R.drawable.color_red, "https://goo.gl/maps/KBHKk8dPPL32", "Artist: Aneikan Udofo"));
-        sites.add(new Site("Navy Memorial", "1112 Q St NW", R.drawable.color_red, "https://goo.gl/maps/zWVkXGbhnVu","Artist: house owners"));
-        sites.add(new Site("Roosevelt Memorial", "2015 Massachusetts Ave NW", R.drawable.color_red, "https://goo.gl/maps/smwtuGkNaDp","Artist: Colette Miller \n\nAt the Embassy Row Hotel"));
-        sites.add(new Site("Jefferson Memorial", "1984 Calvert Street NW", R.drawable.color_red, "https://goo.gl/maps/RyRym1pdKa82","Artist: Karla Cecilia Rodas Cortez \"Karlisima.\""));
-        sites.add(new Site("Martin Luther King Memorial", "Blagden Alley", R.drawable.color_red, "https://goo.gl/maps/JzrWKfNzT3n","Artists: Aniekan Udofia with Mia Duval"));
-        sites.add(new Site("Air Force Memorial", "1344 U Street NW", R.drawable.color_red, "https://goo.gl/maps/fTxtGZaJ5B72","Artist: Joel Bergner"));
-        sites.add(new Site("Pentagon Memorial", "Near Adams Morgan garage", R.drawable.color_red, "https://goo.gl/maps/jFbkF1amTQC2","Artist: Aniekan Udofia \n\nAlley between Amsterdam Falafelshop and Little Shop of Flowers."));
-        sites.add(new Site("Library of Congress", "Near Adams Morgan garage", R.drawable.color_red, "https://goo.gl/maps/jFbkF1amTQC2","Artist: Aniekan Udofia \n\nAlley between Amsterdam Falafelshop and Little Shop of Flowers."));
+        sites.add(new Site("Washington Monument", "2 15th St NW", R.drawable.color_red, "https://www.nps.gov/wamo/index.htm", "Artists: Aniekan Udofia with Mia Duval"));
+        sites.add(new Site("Lincoln Memorial", "2 Lincoln Memorial Cir NW", R.drawable.color_red, "https://www.nps.gov/linc/index.htm", "Artist: Cita Sadeli CHELOVE"));
+        sites.add(new Site("Vietnam Veterans Memorial", "5 Henry Bacon Dr NW", R.drawable.color_red, "https://www.nps.gov/vive/index.htm","Artist: Aniekan Udofia"));
+        sites.add(new Site("Korean War Veterans Memorial", "900 Ohio Dr SW", R.drawable.color_red, "https://www.nps.gov/kowa/index.htm", "Artist: Aneikan Udofo"));
+        sites.add(new Site("United States Navy Memorial", "701 Pennsylvania Ave NW", R.drawable.color_red, "http://www.navymemorial.org/","Artist: house owners"));
+        sites.add(new Site("Franklin Delano Roosevelt Memorial", "1850 West Basin Dr SW", R.drawable.color_red, "https://www.nps.gov/frde/index.htm","Artist: Colette Miller \n\nAt the Embassy Row Hotel"));
+        sites.add(new Site("Thomas Jefferson Memorial", "701 E Basin Dr SW", R.drawable.color_red, "https://www.nps.gov/thje/index.htm","Artist: Karla Cecilia Rodas Cortez \"Karlisima.\""));
+        sites.add(new Site("Martin Luther King Memorial", "1964 Independence Ave SW", R.drawable.color_red, "https://www.nps.gov/mlkm/planyourvisit/basicinfo.htm","Artists: Aniekan Udofia with Mia Duval"));
+        sites.add(new Site("National World War II Memorial", "1750 Independence Ave SW", R.drawable.color_red, "https://www.nps.gov/wwii/index.htm","Artist: Joel Bergner"));
+        sites.add(new Site("Library of Congress", "101 Independence Ave SE", R.drawable.color_red, "https://www.loc.gov/","Artist: Aniekan Udofia \n\nAlley between Amsterdam Falafelshop and Little Shop of Flowers."));
 
 
         // Create an {@link SiteAdapter}, whose data source is a list of {@link Site}s. The
         // adapter knows how to create list items for each item in the list.
-        SiteAdapter adapter = new SiteAdapter(getActivity(), sites, R.color.category_colors);
+        SiteAdapter adapter = new SiteAdapter(getActivity(), sites, R.color.category_memorials);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the

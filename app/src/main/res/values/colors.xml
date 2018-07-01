@@ -23,6 +23,12 @@
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
 
+
+    <color name="category_murals">#0393B5</color>
+    <color name="category_memorials">#C36100</color>
+    <color name="category_art">#A3004D</color>
+    <color name="category_unique">#6CB300</color>
+
     <!-- Background color for the numbers category -->
     <color name="category_numbers">#FD8E09</color>
 
