@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.util.Linkify;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.tourguideapp.R;
@@ -21,6 +22,10 @@ public class SiteDetailsPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.site_details_page);
+
+        int mySiteImage = getIntent().getExtras().getInt("mySitePhoto");
+        ImageView siteDetailsImage = (ImageView) findViewById(R.id.site_detail_image);
+        siteDetailsImage.setImageResource(mySiteImage);
 
         String mySiteTitle = getIntent().getExtras().getString("mySiteTitle");
         TextView siteDetailsTitle = (TextView) findViewById(R.id.site_detail_title_view);

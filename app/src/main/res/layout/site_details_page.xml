@@ -6,6 +6,7 @@
     android:orientation="vertical">
 
     <ImageView
+        android:id="@+id/site_detail_image"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
@@ -13,7 +14,7 @@
         android:gravity="center"
         android:padding="40dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/color_red"
+
          />
 
     <LinearLayout

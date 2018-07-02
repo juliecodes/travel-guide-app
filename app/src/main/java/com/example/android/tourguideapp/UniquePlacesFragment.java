@@ -42,7 +42,7 @@ public class UniquePlacesFragment extends Fragment {
         sites.add(new Site("The Wharf DC", "1100 Maine Ave SW", R.drawable.color_red, "https://www.wharfdc.com/","Cute area featuring old fisherman market as well as swings and a firepit. Shopping, dining, and entertainment, too."));
         sites.add(new Site("Japanese Lantern", "9810 Kutz Bridge", R.drawable.color_red, "https://en.wikipedia.org/wiki/Japanese_Lantern_(Washington,_D.C.)","This Japanese lantern was a gift from Japan and is lit during the annual Cherry Blossom Festival."));
         sites.add(new Site("Tidal Basin (Cherry Blossom Season)", "Tidal Basin", R.drawable.color_red, "https://www.nps.gov/articles/dctidalbasin.htm","Come to the Tidal Basin during the Cherry Blossom Festival."));
-        sites.add(new Site("Blind Whino", "700 Delaware Ave SW", R.drawable.color_red, "https://www.blindwhino.org/","Former church turned art gallery space. It is painted from floor to ceiling with murals, inside and out."));
+        sites.add(new Site("Blind Whino", "700 Delaware Ave SW", R.drawable.blindwhino1, "https://www.blindwhino.org/","Former church turned art gallery space. It is painted from floor to ceiling with murals, inside and out."));
         sites.add(new Site("Yards Park", "355 Water St SE", R.drawable.color_red, "https://www.theyardsdc.com/",""));
 
 
