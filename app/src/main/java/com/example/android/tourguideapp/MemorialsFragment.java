@@ -34,14 +34,14 @@ public class MemorialsFragment extends Fragment {
 
         // Create a list of sites
         final ArrayList<Site> sites = new ArrayList<Site>();
-        sites.add(new Site("Washington Monument", "2 15th St NW", R.drawable.washingtonmonument2, "https://www.nps.gov/wamo/index.htm", "Artists: Aniekan Udofia with Mia Duval"));
-        sites.add(new Site("Lincoln Memorial", "2 Lincoln Memorial Cir NW", R.drawable.lincoln1, "https://www.nps.gov/linc/index.htm", "Artist: Cita Sadeli CHELOVE"));
-        sites.add(new Site("Korean War Veterans Memorial", "900 Ohio Dr SW", R.drawable.koreanwar2, "https://www.nps.gov/kowa/index.htm", "Artist: Aneikan Udofo"));
-        sites.add(new Site("Franklin Delano Roosevelt Memorial", "1850 West Basin Dr SW", R.drawable.fdr1, "https://www.nps.gov/frde/index.htm","Artist: Colette Miller \n\nAt the Embassy Row Hotel"));
-        sites.add(new Site("Thomas Jefferson Memorial", "701 E Basin Dr SW", R.drawable.jeffersonmemorial1, "https://www.nps.gov/thje/index.htm","Artist: Karla Cecilia Rodas Cortez \"Karlisima.\""));
-        sites.add(new Site("Martin Luther King Memorial", "1964 Independence Ave SW", R.drawable.mlk1, "https://www.nps.gov/mlkm/planyourvisit/basicinfo.htm","Artists: Aniekan Udofia with Mia Duval"));
-        sites.add(new Site("National World War II Memorial", "1750 Independence Ave SW", R.drawable.wwiimemorial4, "https://www.nps.gov/wwii/index.htm","Artist: Joel Bergner"));
-        sites.add(new Site("Library of Congress", "101 Independence Ave SE", R.drawable.librarycongress1, "https://www.loc.gov/","Artist: Aniekan Udofia \n\nAlley between Amsterdam Falafelshop and Little Shop of Flowers."));
+        sites.add(new Site("Franklin Delano Roosevelt Memorial", "1850 West Basin Dr SW", R.drawable.fdr1, "https://www.nps.gov/frde/index.htm","This memorial features waterfalls."));
+        sites.add(new Site("Korean War Veterans Memorial", "900 Ohio Dr SW", R.drawable.koreanwar3, "https://www.nps.gov/kowa/index.htm", "I stumbled upon this by accident one day. Really moving memorial."));
+        sites.add(new Site("Lincoln Memorial", "2 Lincoln Memorial Cir NW", R.drawable.lincoln1, "https://www.nps.gov/linc/index.htm", "The most iconic landmark in Washington, next to the Washington Monument."));
+        sites.add(new Site("Library of Congress", "101 Independence Ave SE", R.drawable.librarycongress1, "https://www.loc.gov/","Not a tradtional memorial, but it is a beautiful historic building."));
+        sites.add(new Site("Martin Luther King Memorial", "1964 Independence Ave SW", R.drawable.mlk1, "https://www.nps.gov/mlkm/planyourvisit/basicinfo.htm","Inspiring memorial in the tidal basin."));
+        sites.add(new Site("National World War II Memorial", "1750 Independence Ave SW", R.drawable.wwiimemorial4, "https://www.nps.gov/wwii/index.htm","This memorial features a fountain that lights up at night."));
+        sites.add(new Site("Thomas Jefferson Memorial", "701 E Basin Dr SW", R.drawable.jeffersonmemorial1, "https://www.nps.gov/thje/index.htm","Gorgeous memorial best visited during cherry blossom season"));
+        sites.add(new Site("Washington Monument", "2 15th St NW", R.drawable.washingtonmonument2, "https://www.nps.gov/wamo/index.htm", "The most iconic landmark in Washington, next to the Lincoln Memorial."));
 
 
         // Create an {@link SiteAdapter}, whose data source is a list of {@link Site}s. The

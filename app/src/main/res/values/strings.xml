@@ -20,17 +20,7 @@
   <string name="category_memorials">Memorials</string>
 <string name="category_unique">Unique DC</string>
 
-    <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">Phrases</string>
 
-    <!-- Category name for the vocabulary sites for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Colors</string>
-
-    <!-- Category name for the vocabulary sites for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Numbers</string>
-
-    <!-- Category name for the vocabulary sites for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
