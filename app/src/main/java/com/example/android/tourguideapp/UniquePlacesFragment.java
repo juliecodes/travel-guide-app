@@ -34,16 +34,16 @@ public class UniquePlacesFragment extends Fragment {
 
         // Create a list of sites
         final ArrayList<Site> sites = new ArrayList<Site>();
-        sites.add(new Site("National Arboretum", "3501 New York Ave NE", R.drawable.color_red, "https://usna.usda.gov/", "Gorgeous outdoor place with giant columns and bonsai garden."));
-        sites.add(new Site("Meridian Hill Park", "16th St NW & W Street NW", R.drawable.color_red, "https://www.nps.gov/places/meridian-hill-park.htm", "Beautiful park featuring large water structure."));
-        sites.add(new Site("Theodore Roosevelt Island", "Theodore Roosevelt Island", R.drawable.color_red, "https://www.nps.gov/this/index.htm","Island south of the DC mainland."));
-        sites.add(new Site("The Einstein Memorial", "2101 Constitution Ave NW", R.drawable.color_red, "http://www.nasonline.org/about-nas/visiting-nas/nas-building/the-einstein-memorial.html", "Giant Einstein sculpture."));
-        sites.add(new Site("Washington National Cathedral", "3101 Wisconsin Ave. NW", R.drawable.color_red, "https://cathedral.org/","Beautiful cathedral."));
-        sites.add(new Site("The Wharf DC", "1100 Maine Ave SW", R.drawable.color_red, "https://www.wharfdc.com/","Cute area featuring old fisherman market as well as swings and a firepit. Shopping, dining, and entertainment, too."));
-        sites.add(new Site("Japanese Lantern", "9810 Kutz Bridge", R.drawable.color_red, "https://en.wikipedia.org/wiki/Japanese_Lantern_(Washington,_D.C.)","This Japanese lantern was a gift from Japan and is lit during the annual Cherry Blossom Festival."));
-        sites.add(new Site("Tidal Basin (Cherry Blossom Season)", "Tidal Basin", R.drawable.color_red, "https://www.nps.gov/articles/dctidalbasin.htm","Come to the Tidal Basin during the Cherry Blossom Festival."));
+        sites.add(new Site("National Arboretum", "3501 New York Ave NE", R.drawable.arboretum1, "https://usna.usda.gov/", "Gorgeous outdoor place with giant columns and bonsai garden."));
+        sites.add(new Site("Meridian Hill Park", "16th St NW & W Street NW", R.drawable.meridian1, "https://www.nps.gov/places/meridian-hill-park.htm", "Beautiful park featuring large water structure."));
+        sites.add(new Site("Theodore Roosevelt Island", "Theodore Roosevelt Island", R.drawable.tr_island1, "https://www.nps.gov/this/index.htm","Island south of the DC mainland."));
+        sites.add(new Site("The Einstein Memorial", "2101 Constitution Ave NW", R.drawable.einstein1, "http://www.nasonline.org/about-nas/visiting-nas/nas-building/the-einstein-memorial.html", "Giant Einstein sculpture."));
+        sites.add(new Site("Washington National Cathedral", "3101 Wisconsin Ave. NW", R.drawable.cathedral3, "https://cathedral.org/","Beautiful cathedral."));
+        sites.add(new Site("The Wharf DC", "1100 Maine Ave SW", R.drawable.wharfdc2, "https://www.wharfdc.com/","Cute area featuring old fisherman market as well as swings and a firepit. Shopping, dining, and entertainment, too."));
+        sites.add(new Site("Japanese Lantern", "9810 Kutz Bridge", R.drawable.japaneselantern1, "https://en.wikipedia.org/wiki/Japanese_Lantern_(Washington,_D.C.)","This Japanese lantern was a gift from Japan and is lit during the annual Cherry Blossom Festival."));
+        sites.add(new Site("Tidal Basin (Cherry Blossom Season)", "Tidal Basin", R.drawable.tidalbasin1, "https://www.nps.gov/articles/dctidalbasin.htm","Come to the Tidal Basin during the Cherry Blossom Festival."));
         sites.add(new Site("Blind Whino", "700 Delaware Ave SW", R.drawable.blindwhino1, "https://www.blindwhino.org/","Former church turned art gallery space. It is painted from floor to ceiling with murals, inside and out."));
-        sites.add(new Site("Yards Park", "355 Water St SE", R.drawable.color_red, "https://www.theyardsdc.com/",""));
+        sites.add(new Site("Yards Park", "355 Water St SE", R.drawable.yardspark1, "https://www.theyardsdc.com/",""));
 
 
         // Create an {@link SiteAdapter}, whose data source is a list of {@link Site}s. The

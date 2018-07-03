@@ -34,16 +34,16 @@ public class MuralsFragment extends Fragment {
 
         // Create a list of sites
         final ArrayList<Site> sites = new ArrayList<Site>();
-        sites.add(new Site("The Torch", "1213 U St NW", R.drawable.color_red, "https://goo.gl/maps/SvhAX8Yh7ao", "Artists: Aniekan Udofia with Mia Duval"));
+        sites.add(new Site("The Torch", "1213 U St NW", R.drawable.thetorch1, "https://goo.gl/maps/SvhAX8Yh7ao", "Artists: Aniekan Udofia with Mia Duval"));
         sites.add(new Site("Every Day I See Something New", "1742 Kalorama Rd NW", R.drawable.everydayisee1, "https://goo.gl/maps/eCMgW7xPaXH2", "Artist: Cita Sadeli CHELOVE"));
         sites.add(new Site("Mermaid", "635 North Carolina Ave SE", R.drawable.mermaid1, "https://goo.gl/maps/atEhRv7n5V12","Artist: Aniekan Udofia"));
         sites.add(new Site("Marvin 2014", "S Street NW and 7th Street NW", R.drawable.marvinmural, "https://goo.gl/maps/KBHKk8dPPL32", "Artist: Aneikan Udofo"));
-        sites.add(new Site("Watermelon House", "1112 Q St NW", R.drawable.color_red, "https://goo.gl/maps/zWVkXGbhnVu","Artist: house owners"));
-        sites.add(new Site("Angel Wings", "2015 Massachusetts Ave NW", R.drawable.color_red, "https://goo.gl/maps/smwtuGkNaDp","Artist: Colette Miller \n\nAt the Embassy Row Hotel"));
+        sites.add(new Site("Watermelon House", "1112 Q St NW", R.drawable.watermelon1, "https://goo.gl/maps/zWVkXGbhnVu","Artist: house owners"));
+        sites.add(new Site("Angel Wings", "2015 Massachusetts Ave NW", R.drawable.angelwings1, "https://goo.gl/maps/smwtuGkNaDp","Artist: Colette Miller \n\nAt the Embassy Row Hotel"));
         sites.add(new Site("Presidential mural", "1984 Calvert Street NW", R.drawable.presidential1, "https://goo.gl/maps/RyRym1pdKa82","Artist: Karla Cecilia Rodas Cortez \"Karlisima.\""));
         sites.add(new Site("Space is the Place", "Blagden Alley", R.drawable.space, "https://goo.gl/maps/JzrWKfNzT3n","Artists: Aniekan Udofia with Mia Duval"));
-        sites.add(new Site("Currulao y Desplazamiento", "1344 U Street NW", R.drawable.color_red, "https://goo.gl/maps/fTxtGZaJ5B72","Artist: Joel Bergner \n\nAfro-Colombian Mural."));
-        sites.add(new Site("Shop Small 2014", "Near Adams Morgan garage", R.drawable.color_red, "https://goo.gl/maps/jFbkF1amTQC2","Artist: Aniekan Udofia \n\nAlley between Amsterdam Falafelshop and Little Shop of Flowers."));
+        sites.add(new Site("Currulao y Desplazamiento", "1344 U Street NW", R.drawable.currulao1, "https://goo.gl/maps/fTxtGZaJ5B72","Artist: Joel Bergner \n\nAfro-Colombian Mural."));
+        sites.add(new Site("Shop Small 2014", "Near Adams Morgan garage", R.drawable.shopsmall2014_1, "https://goo.gl/maps/jFbkF1amTQC2","Artist: Aniekan Udofia \n\nAlley between Amsterdam Falafelshop and Little Shop of Flowers."));
 
 
         // Create an {@link SiteAdapter}, whose data source is a list of {@link Site}s. The
