@@ -56,15 +56,15 @@ public class MuralsFragment extends Fragment {
 
         // Create a list of sites
         final ArrayList<Site> sites = new ArrayList<Site>();
-        sites.add(new Site("Angel Wings", "2015 Massachusetts Ave NW", R.drawable.angelwings1, "https://goo.gl/maps/smwtuGkNaDp", "Artist: Colette Miller \nAt the Embassy Row Hotel"));
-        sites.add(new Site("Currulao y Desplazamiento", "1344 U Street NW", R.drawable.currulao1, "https://goo.gl/maps/fTxtGZaJ5B72", "Artist: Joel Bergner \nBeautiful Afro-Colombian Mural."));
-        sites.add(new Site("Every Day I See Something New", "1742 Kalorama Rd NW", R.drawable.everydayisee1, "https://goo.gl/maps/eCMgW7xPaXH2", "Artist: Cita Sadeli CHELOVE"));
-        sites.add(new Site("Marvin 2014", "S Street NW and 7th Street NW", R.drawable.marvinmural, "https://goo.gl/maps/KBHKk8dPPL32", "Artist: Aneikan Udofo"));
-        sites.add(new Site("Mermaid", "635 North Carolina Ave SE", R.drawable.mermaid1, "https://goo.gl/maps/atEhRv7n5V12", "Artist: Aniekan Udofia"));
-        sites.add(new Site("Presidential mural", "1984 Calvert Street NW", R.drawable.presidential1, "https://goo.gl/maps/RyRym1pdKa82", "Artist: Karla Cecilia Rodas Cortez \"Karlisima.\""));
-        sites.add(new Site("Shop Small 2014", "Near Adams Morgan garage", R.drawable.shopsmall2014_2, "https://goo.gl/maps/jFbkF1amTQC2", "Artist: Aniekan Udofia \nAlley between Amsterdam Falafelshop and Little Shop of Flowers."));
-        sites.add(new Site("Space is the Place", "Blagden Alley", R.drawable.space, "https://goo.gl/maps/JzrWKfNzT3n", "Artists: Aniekan Udofia with Mia Duval"));
-        sites.add(new Site("The Torch", "1213 U St NW", R.drawable.thetorch1, "https://goo.gl/maps/SvhAX8Yh7ao", "Artists: Aniekan Udofia with Mia Duval"));
+        sites.add(new Site(getString(R.string.angel), getString(R.string.angel_loc), R.drawable.angelwings1, "https://goo.gl/maps/smwtuGkNaDp", getString(R.string.angel_info)));
+        sites.add(new Site(getString(R.string.currulao), getString(R.string.currulao_loc), R.drawable.currulao1, "https://goo.gl/maps/fTxtGZaJ5B72", getString(R.string.currulao_info)));
+        sites.add(new Site(getString(R.string.everyday), getString(R.string.everyday_loc), R.drawable.everydayisee1, "https://goo.gl/maps/eCMgW7xPaXH2", getString(R.string.everyday_info)));
+        sites.add(new Site(getString(R.string.marvin), getString(R.string.marvin_loc), R.drawable.marvinmural, "https://goo.gl/maps/KBHKk8dPPL32", getString(R.string.marvin_info)));
+        sites.add(new Site(getString(R.string.mermaid), getString(R.string.mermaid_loc), R.drawable.mermaid1, "https://goo.gl/maps/atEhRv7n5V12", getString(R.string.mermaid_info)));
+        sites.add(new Site(getString(R.string.presidential), getString(R.string.presidential_loc), R.drawable.presidential1, "https://goo.gl/maps/RyRym1pdKa82", getString(R.string.presidential_info)));
+        sites.add(new Site(getString(R.string.shop_small), getString(R.string.shop_small_loc), R.drawable.shopsmall2014_2, "https://goo.gl/maps/jFbkF1amTQC2", getString(R.string.shop_small_info)));
+        sites.add(new Site(getString(R.string.space), getString(R.string.space_loc), R.drawable.space, "https://goo.gl/maps/JzrWKfNzT3n", getString(R.string.space_info)));
+        sites.add(new Site(getString(R.string.torch), getString(R.string.torch_loc), R.drawable.thetorch1, "https://goo.gl/maps/SvhAX8Yh7ao", getString(R.string.torch_info)));
 
 
         // Create an {@link SiteAdapter}, whose data source is a list of {@link Site}s. The
@@ -94,7 +94,7 @@ public class MuralsFragment extends Fragment {
 
                 Intent siteDetailIntent = new Intent(getActivity(), SiteDetailsPage.class);
 
-                siteDetailIntent.putExtra("mySiteTitle", currentSite.getTitle());
+                siteDetailIntent.putExtra("mySiteTitle", currentSite.getSiteTitle());
                 siteDetailIntent.putExtra("mySiteLocation", currentSite.getLocation());
                 siteDetailIntent.putExtra("mySitePhoto", currentSite.getImageResourceId());
                 siteDetailIntent.putExtra("mySiteUrl", currentSite.getUrl());

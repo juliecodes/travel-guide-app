@@ -21,7 +21,6 @@
     </style>
 
 
-
     <style name="myTabStyle">
         <item name="android:textSize">13sp</item>
         <item name="android:textAllCaps">true</item>

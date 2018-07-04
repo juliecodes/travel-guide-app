@@ -19,7 +19,6 @@
     android:layout_margin="0dp"
     android:background="@color/tan_background"
     android:minHeight="@dimen/list_item_height"
-
     android:orientation="horizontal"
 
     >
@@ -47,28 +46,27 @@
         >
 
         <TextView
-            android:id="@+id/miwok_text_view"
+            android:id="@+id/site_title_text_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="left"
             android:layout_weight="1"
             android:gravity="bottom"
-android:textSize="14sp"
             android:textColor="@color/white"
+            android:textSize="14sp"
             android:textStyle="bold"
-            tools:text="lutti" />
+            tools:text="site title" />
 
         <TextView
-            android:id="@+id/default_text_view"
+            android:id="@+id/site_loc_text_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="left"
             android:layout_weight="1"
             android:gravity="top"
-
-            android:textSize="14sp"
             android:textColor="@color/white"
-            tools:text="one" />
+            android:textSize="14sp"
+            tools:text="site location" />
     </LinearLayout>
 
     <ImageView
@@ -76,8 +74,8 @@ android:textSize="14sp"
         android:layout_height="24dp"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/baseline_chevron_right_white_24"
         android:layout_marginRight="16dp"
+        android:src="@drawable/baseline_chevron_right_white_24"
 
         />
 

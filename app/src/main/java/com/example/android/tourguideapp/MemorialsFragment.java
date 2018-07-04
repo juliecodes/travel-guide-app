@@ -51,14 +51,14 @@ public class MemorialsFragment extends Fragment {
 
         // Create a list of sites
         final ArrayList<Site> sites = new ArrayList<Site>();
-        sites.add(new Site("Franklin D. Roosevelt Memorial", "1850 West Basin Dr SW", R.drawable.fdr1, "https://www.nps.gov/frde/index.htm", "This memorial features waterfalls."));
-        sites.add(new Site("Korean War Veterans Memorial", "900 Ohio Dr SW", R.drawable.koreanwar3, "https://www.nps.gov/kowa/index.htm", "I stumbled upon this by accident one day. Really moving memorial."));
-        sites.add(new Site("Lincoln Memorial", "2 Lincoln Memorial Cir NW", R.drawable.lincoln1, "https://www.nps.gov/linc/index.htm", "The most iconic memorial in Washington, next to the Washington Monument."));
-        sites.add(new Site("Library of Congress", "101 Independence Ave SE", R.drawable.librarycongress1, "https://www.loc.gov/", "Not a tradtional memorial, but it is a beautiful historic building."));
-        sites.add(new Site("Martin Luther King Memorial", "1964 Independence Ave SW", R.drawable.mlk1, "https://www.nps.gov/mlkm/planyourvisit/basicinfo.htm", "Inspiring memorial in the tidal basin."));
-        sites.add(new Site("National World War II Memorial", "1750 Independence Ave SW", R.drawable.wwiimemorial4, "https://www.nps.gov/wwii/index.htm", "This memorial features a fountain that lights up at night."));
-        sites.add(new Site("Thomas Jefferson Memorial", "701 E Basin Dr SW", R.drawable.jeffersonmemorial1, "https://www.nps.gov/thje/index.htm", "Grand memorial best visited during cherry blossom season"));
-        sites.add(new Site("Washington Monument", "2 15th St NW", R.drawable.washingtonmonument2, "https://www.nps.gov/wamo/index.htm", "The most iconic memorial in Washington, next to the Lincoln Memorial."));
+        sites.add(new Site(getString(R.string.fdr), getString(R.string.fdr_loc), R.drawable.fdr1, "https://www.nps.gov/frde/index.htm", getString(R.string.fdr_info)));
+        sites.add(new Site(getString(R.string.korean), getString(R.string.korean_loc), R.drawable.koreanwar3, "https://www.nps.gov/kowa/index.htm", getString(R.string.korean_info)));
+        sites.add(new Site(getString(R.string.lincoln), getString(R.string.lincoln_loc), R.drawable.lincoln1, "https://www.nps.gov/linc/index.htm", getString(R.string.lincoln_info)));
+        sites.add(new Site(getString(R.string.library), getString(R.string.library_loc), R.drawable.librarycongress1, "https://www.loc.gov/", getString(R.string.library_info)));
+        sites.add(new Site(getString(R.string.mlk), getString(R.string.mlk_loc), R.drawable.mlk1, "https://www.nps.gov/mlkm/planyourvisit/basicinfo.htm", getString(R.string.mlk_info)));
+        sites.add(new Site(getString(R.string.wwii), getString(R.string.wwii_loc), R.drawable.wwiimemorial4, "https://www.nps.gov/wwii/index.htm", getString(R.string.wwii_info)));
+        sites.add(new Site(getString(R.string.jefferson), getString(R.string.jefferson_loc), R.drawable.jeffersonmemorial1, "https://www.nps.gov/thje/index.htm", getString(R.string.jefferson_info)));
+        sites.add(new Site(getString(R.string.washington_monument), getString(R.string.washington_monument_loc), R.drawable.washingtonmonument2, "https://www.nps.gov/wamo/index.htm", getString(R.string.washington_monument_info)));
 
 
         // Create an {@link SiteAdapter}, whose data source is a list of {@link Site}s. The
@@ -88,7 +88,7 @@ public class MemorialsFragment extends Fragment {
 
                 Intent siteDetailIntent = new Intent(getActivity(), SiteDetailsPage.class);
 
-                siteDetailIntent.putExtra("mySiteTitle", currentSite.getTitle());
+                siteDetailIntent.putExtra("mySiteTitle", currentSite.getSiteTitle());
                 siteDetailIntent.putExtra("mySiteLocation", currentSite.getLocation());
                 siteDetailIntent.putExtra("mySitePhoto", currentSite.getImageResourceId());
                 siteDetailIntent.putExtra("mySiteUrl", currentSite.getUrl());

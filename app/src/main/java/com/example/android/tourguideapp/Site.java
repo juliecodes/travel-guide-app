@@ -16,55 +16,45 @@
 package com.example.android.tourguideapp;
 
 /**
- * {@link Site} represents a vocabulary word that the user wants to learn.
- * It contains a default translation, a Miwok translation, and an image for that word.
+ * {@link Site} represents a site that the user wants to visit.
+ * It contains a title, location, information, url, and an image for that site.
  */
 public class Site {
 
-    /** Default translation for the word */
+    private static final int NO_IMAGE_PROVIDED = -1;
+    /**
+     * site title
+     */
     private String mTitle;
-
-    /** Miwok translation for the word */
+    /**
+     * site location
+     */
     private String mLocation;
+    /**
+     * image resource ID for the site
+     */
 
-    /**  image resource ID for the word */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    private static final int NO_IMAGE_PROVIDED = -1;
-
-   private String mMoreInfo;
-
-   private String mUrl;
-
+    /**
+     * information about the site
+     */
+    private String mMoreInfo;
 
     /**
-     * Create a new Site object.
-     *
-     * @param title is the title of the site
-     * @param location is the locaiton of the site
-     * @param imageResourceId is the photo for the site.
-     * @param url is the website or map location of the site
-     *
-     *
+     * URL for the site's website or a Google map of its location.
      */
-    public Site(String title, String location, int imageResourceId, String url) {
-        mTitle = title;
-        mLocation = location;
-       mImageResourceId = imageResourceId;
-       mUrl = url;
+    private String mUrl;
 
-    }
 
     /**
      * Create a new Site object for murals category.
      *
-     * @param title is the title of the site
-     * @param location is the locaiton of the site
+     * @param title           is the title of the site
+     * @param location        is the location of the site
      * @param imageResourceId is the photo for the site.
-     * @param url is the website or map location of the site
-     * @param moreInfo is more information for the site.
-     *
-     *
+     * @param url             is the website or map location of the site
+     * @param moreInfo        is more information for the site.
      */
     public Site(String title, String location, int imageResourceId, String url, String moreInfo) {
         mTitle = title;
@@ -79,7 +69,7 @@ public class Site {
     /**
      * Get the name of the site.
      */
-    public String getTitle() {
+    public String getSiteTitle() {
         return mTitle;
     }
 
@@ -89,7 +79,6 @@ public class Site {
     public String getLocation() {
         return mLocation;
     }
-
 
 
     /**
@@ -106,11 +95,16 @@ public class Site {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
-    /** Get the URL or map url of the current site. */
-    public String getUrl() { return mUrl; }
+    /**
+     * Get the URL or Google map of the current site.
+     */
+    public String getUrl() {
+        return mUrl;
+    }
 
-    public String getMoreInfo() { return mMoreInfo; }
+    public String getMoreInfo() {
+        return mMoreInfo;
+    }
 
-    /** Returns whether or not there is more info for this site. */
-    public boolean hasMoreInfo() { return mMoreInfo != null; }
+
 }

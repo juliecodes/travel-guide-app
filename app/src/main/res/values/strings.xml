@@ -14,16 +14,165 @@
 -->
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
-    <string name="app_name">Washington DC Guide</string>
+    <string name="app_name">DC Guide</string>
+
     <string name="site_details_page_title">More Info</string>
 
+    <!-- Categories -->
     <string name="category_murals">Murals</string>
     <string name="category_art_places">Art</string>
-  <string name="category_memorials">Memorials</string>
-<string name="category_unique">Unique DC</string>
-
-<!-- TITLE, LOCATION, MORE INFO -->
+    <string name="category_unique">Unique DC</string>
+    <string name="category_memorials">Memorials</string>
 
 
+    <!-- ART PLACES: TITLE, LOCATION, MORE INFO -->
+
+    <string name="artechouse">Artechouse</string>
+    <string name="artechouse_loc">1238 Maryland Ave SW</string>
+    <string name="artechouse_info">Where art and technology merge. Full scale interactive video installations.</string>
+
+    <string name="blind_whino">Blind Whino</string>
+    <string name="blind_whino_loc">700 Delaware Ave SW</string>
+    <string name="blind_whino_info">Former church turned art gallery space. It is painted from floor to ceiling with murals, inside and out.</string>
+
+    <string name="dupont_underground">Dupont Underground</string>
+    <string name="dupont_underground_loc">19 Dupont Cir NW</string>
+    <string name="dupont_underground_info">Former subway station turned gallery space.</string>
+
+    <string name="hirshhorn">Hirshhorn Museum and Sculpture Garden</string>
+    <string name="hirshhorn_loc">Independence Ave &amp; 7th St SW</string>
+    <string name="hirshhorn_info">Interesting installations.</string>
+
+    <string name="nga">National Gallery of Art</string>
+    <string name="nga_loc">6th &amp; Constitution Ave NW</string>
+    <string name="nga_info">Most extensive art museum in DC. Everything from before classical art to modern art.</string>
+
+    <string name="nmwa">National Museum of Women in the Arts</string>
+    <string name="nmwa_loc">1250 New York Ave NW</string>
+    <string name="nmwa_info">Thought-provoking art by women artists.</string>
+
+    <string name="phillips">The Phillips Collection</string>
+    <string name="phillips_loc">1600 21st St NW</string>
+    <string name="phillips_info">Renoir\'s famous painting is here. Lots of impressionist paintings.</string>
+
+    <string name="renwick">Renwick Gallery</string>
+    <string name="renwick_loc">1661 Pennsylvania Ave NW</string>
+    <string name="renwick_info">Interesting installations.</string>
+
+
+    <!-- MEMORIALS: TITLE, LOCATION, MORE INFO -->
+
+    <string name="fdr">Franklin D. Roosevelt Memorial</string>
+    <string name="fdr_loc">1850 West Basin Dr SW</string>
+    <string name="fdr_info">This memorial features waterfalls.</string>
+
+    <string name="korean">Korean War Veterans Memorial</string>
+    <string name="korean_loc">900 Ohio Dr SW</string>
+    <string name="korean_info">Really moving memorial.</string>
+
+    <string name="lincoln">Lincoln Memorial</string>
+    <string name="lincoln_loc">2 Lincoln Memorial Cir NW</string>
+    <string name="lincoln_info">The most iconic memorial in Washington, next to the Washington Monument.</string>
+
+    <string name="library">Library of Congress</string>
+    <string name="library_loc">101 Independence Ave SE</string>
+    <string name="library_info">Not a traditional memorial, but it is a beautiful historic building.</string>
+
+    <string name="mlk">Martin Luther King Memorial</string>
+    <string name="mlk_loc">1964 Independence Ave SW</string>
+    <string name="mlk_info">Inspiring memorial in the tidal basin.</string>
+
+    <string name="wwii">National World War II Memorial</string>
+    <string name="wwii_loc">1750 Independence Ave SW</string>
+    <string name="wwii_info">This memorial features a fountain that lights up at night.</string>
+
+    <string name="jefferson">Thomas Jefferson Memorial</string>
+    <string name="jefferson_loc">701 E Basin Dr SW</string>
+    <string name="jefferson_info">Grand memorial best visited during cherry blossom season</string>
+
+    <string name="washington_monument">Washington Monument</string>
+    <string name="washington_monument_loc">2 15th St NW</string>
+    <string name="washington_monument_info">Amazing views of Washington DC from the top of this monument.</string>
+
+
+    <!-- MURALS: TITLE, LOCATION, MORE INFO -->
+
+    <string name="angel">Angel Wings</string>
+    <string name="angel_loc">2015 Massachusetts Ave NW</string>
+    <string name="angel_info">Artist: Colette Miller. Located at the Embassy Row Hotel</string>
+
+    <string name="currulao">Currulao y Desplazamiento</string>
+    <string name="currulao_loc">1344 U Street NW</string>
+    <string name="currulao_info">Artist: Joel Bergner. Beautiful Afro-Colombian mural.</string>
+
+    <string name="everyday">Every Day I See Something New</string>
+    <string name="everyday_loc">1742 Kalorama Rd NW</string>
+    <string name="everyday_info">Artist: Cita Sadeli CHELOVE</string>
+
+    <string name="marvin">Marvin 2014</string>
+    <string name="marvin_loc">S Street NW and 7th Street NW</string>
+    <string name="marvin_info">Artist: Aneikan Udofo</string>
+
+    <string name="mermaid">Mermaid</string>
+    <string name="mermaid_loc">635 North Carolina Ave SE</string>
+    <string name="mermaid_info">Artist: Aniekan Udofia</string>
+
+    <string name="presidential">Presidential Mural</string>
+    <string name="presidential_loc">1984 Calvert Street NW</string>
+    <string name="presidential_info">Artist: Karla Cecilia Rodas Cortez "Karlisima"</string>
+
+    <string name="shop_small">Shop Small 2014</string>
+    <string name="shop_small_loc">Near Adams Morgan garage</string>
+    <string name="shop_small_info">Artist: Aniekan Udofia. Located in the alley between Amsterdam Falafelshop and Little Shop of Flowers.</string>
+
+    <string name="space">Space is the Place</string>
+    <string name="space_loc">Blagden Alley</string>
+    <string name="space_info">Artists: Aniekan Udofia with Mia Duval</string>
+
+    <string name="torch">The Torch</string>
+    <string name="torch_loc">1213 U St NW</string>
+    <string name="torch_info">Artists: Aniekan Udofia with Mia Duval</string>
+
+    <!-- UNIQUE DC: TITLE, LOCATION, MORE INFO -->
+
+    <string name="cherry_blossom">Cherry Blossom Season</string>
+    <string name="cherry_blossom_loc">Tidal Basin</string>
+    <string name="cherry_blossom_info">Come to the Tidal Basin during cherry blossom season.</string>
+
+    <string name="einstein">The Einstein Memorial</string>
+    <string name="einstein_loc">2101 Constitution Ave NW</string>
+    <string name="einstein_info">Giant Einstein sculpture.</string>
+
+    <string name="lantern">Japanese Lantern</string>
+    <string name="lantern_loc">9810 Kutz Bridge</string>
+    <string name="lantern_info">This Japanese lantern was a gift from Japan and is lit during the annual Cherry Blossom Festival.</string>
+
+    <string name="meridian">Meridian Hill Park</string>
+    <string name="meridian_loc">16th St NW &amp; W Street NW</string>
+    <string name="meridian_info">Large park featuring a waterfall structure.</string>
+
+    <string name="arboretum">National Arboretum</string>
+    <string name="arboretum_loc">3501 New York Ave NE</string>
+    <string name="arboretum_info">Gorgeous outdoor place with giant columns and bonsai garden.</string>
+
+    <string name="roosevelt_island">Theodore Roosevelt Island</string>
+    <string name="roosevelt_island_loc">South of DC mainland</string>
+    <string name="roosevelt_island_info">This island features trails and a few memorial statues.</string>
+
+    <string name="cathedral">Washington National Cathedral</string>
+    <string name="cathedral_loc">3101 Wisconsin Ave NW</string>
+    <string name="cathedral_info">Beautiful cathedral.</string>
+
+    <string name="watermelon">Watermelon House</string>
+    <string name="watermelon_loc">1112 Q St NW</string>
+    <string name="watermelon_info">Artists: Wade Wilson and Robert Banaszak</string>
+
+    <string name="wharf">The Wharf DC</string>
+    <string name="wharf_loc">1100 Maine Ave SW</string>
+    <string name="wharf_info">Cute area featuring old fisherman markets, swings, and a firepit. Shopping, dining, and entertainment, too.</string>
+
+    <string name="yards_park">Yards Park</string>
+    <string name="yards_park_loc">355 Water St SE</string>
+    <string name="yards_park_info">Nice area to splash in the water and stroll along a really cool bridge.</string>
 
 </resources>

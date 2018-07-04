@@ -44,16 +44,12 @@ public class SiteDetailsPage extends AppCompatActivity {
         siteDetailsMoreInfo.setText(mySiteMoreInfo);
 
         String mySiteUrl = getIntent().getExtras().getString("mySiteUrl");
-         TextView siteDetailsUrl = (TextView) findViewById(R.id.site_detail_url_link);
-         siteDetailsUrl.setText(mySiteUrl);
-         Linkify.addLinks(siteDetailsUrl, Linkify.WEB_URLS);
-
-
-
+        TextView siteDetailsUrl = (TextView) findViewById(R.id.site_detail_url_link);
+        siteDetailsUrl.setText(mySiteUrl);
+        Linkify.addLinks(siteDetailsUrl, Linkify.WEB_URLS);
 
 
     }
-
 
 
 }

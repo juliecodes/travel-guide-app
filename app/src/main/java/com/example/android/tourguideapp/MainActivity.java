@@ -23,7 +23,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.example.android.tourguideapp.R;
 
 /**
- * Displays a {@link ViewPager} where each page shows a different day of the week.
+ * Displays a {@link ViewPager} where each page shows a different list of sites.
  */
 public class MainActivity extends AppCompatActivity {
 

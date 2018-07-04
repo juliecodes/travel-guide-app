@@ -13,9 +13,7 @@
         android:layout_weight="2"
         android:gravity="center"
         android:padding="40dp"
-        android:scaleType="fitCenter"
-
-        />
+        android:scaleType="fitCenter" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -44,9 +42,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="16sp"
-                tools:text="detail site location"
-
-                />
+                tools:text="detail site location" />
 
             <TextView
                 android:id="@+id/site_detail_more_info"
@@ -54,9 +50,7 @@
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
                 android:textSize="14sp"
-                tools:text="more info"
-
-                />
+                tools:text="more info" />
 
             <TextView
                 android:id="@+id/site_detail_url_link"
@@ -66,7 +60,6 @@
                 android:textAlignment="center"
                 android:textSize="14sp"
                 tools:text="url" />
-
 
         </LinearLayout>
     </ScrollView>

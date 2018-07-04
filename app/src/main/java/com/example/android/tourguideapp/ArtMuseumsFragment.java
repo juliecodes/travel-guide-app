@@ -35,14 +35,14 @@ public class ArtMuseumsFragment extends Fragment {
 
         // Create a list of sites
         final ArrayList<Site> sites = new ArrayList<Site>();
-        sites.add(new Site("Artechouse", "1238 Maryland Ave SW", R.drawable.artechouse1, "https://www.usa.artechouse.com/", "Where art and technology merge. Full scale interactive video installations."));
-        sites.add(new Site("Blind Whino", "700 Delaware Ave SW", R.drawable.blindwhino1, "https://www.blindwhino.org/", "Former church turned art gallery space. It is painted from floor to ceiling with murals, inside and out."));
-        sites.add(new Site("Dupont Underground", "19 Dupont Cir NW", R.drawable.dupontunderground, "https://www.dupontunderground.org/", "Former subway station turned gallery space."));
-        sites.add(new Site("Hirshhorn Museum and Sculpture Garden", "Independence Ave & 7th St SW", R.drawable.hirshhorn1, "https://hirshhorn.si.edu/", "Interesting installations."));
-        sites.add(new Site("National Gallery of Art", "6th & Constitution Ave NW", R.drawable.nga1, "https://www.nga.gov/", "Most extensive art museum in DC."));
-        sites.add(new Site("National Museum of Women in the Arts", "1250 New York Ave NW", R.drawable.womensmuseum2, "https://nmwa.org/", "Thought-provoking art by women artists."));
-        sites.add(new Site("The Phillips Collection", "1600 21st St NW", R.drawable.phillipscollection1, "http://www.phillipscollection.org/", "Renoir's famous painting is here. Lots of impressionist paintings."));
-        sites.add(new Site("Renwick Gallery", "1661 Pennsylvania Ave NW", R.drawable.renwickgallery, "https://americanart.si.edu/visit/renwick", "Interesting installations."));
+        sites.add(new Site(getString(R.string.artechouse), getString(R.string.artechouse_loc), R.drawable.artechouse1, "https://www.usa.artechouse.com/", getString(R.string.artechouse_info)));
+        sites.add(new Site(getString(R.string.blind_whino), getString(R.string.blind_whino_loc), R.drawable.blindwhino1, "https://www.blindwhino.org/", getString(R.string.blind_whino_info)));
+        sites.add(new Site(getString(R.string.dupont_underground), getString(R.string.dupont_underground_loc), R.drawable.dupontunderground, "https://www.dupontunderground.org/", getString(R.string.dupont_underground_info)));
+        sites.add(new Site(getString(R.string.hirshhorn), getString(R.string.hirshhorn_loc), R.drawable.hirshhorn1, "https://hirshhorn.si.edu/", getString(R.string.hirshhorn_info)));
+        sites.add(new Site(getString(R.string.nga), getString(R.string.nga_loc), R.drawable.nga1, "https://www.nga.gov/", getString(R.string.nga_info)));
+        sites.add(new Site(getString(R.string.nmwa), getString(R.string.nmwa_loc), R.drawable.womensmuseum2, "https://nmwa.org/", getString(R.string.nmwa_info)));
+        sites.add(new Site(getString(R.string.phillips), getString(R.string.phillips_loc), R.drawable.phillipscollection1, "http://www.phillipscollection.org/", getString(R.string.nmwa_info)));
+        sites.add(new Site(getString(R.string.renwick), getString(R.string.renwick_loc), R.drawable.renwickgallery, "https://americanart.si.edu/visit/renwick", getString(R.string.renwick_info)));
 
 
         // Create an {@link SiteAdapter}, whose data source is a list of {@link Site}s. The
@@ -71,7 +71,7 @@ public class ArtMuseumsFragment extends Fragment {
 
                 Intent siteDetailIntent = new Intent(getActivity(), SiteDetailsPage.class);
 
-                siteDetailIntent.putExtra("mySiteTitle", currentSite.getTitle());
+                siteDetailIntent.putExtra("mySiteTitle", currentSite.getSiteTitle());
                 siteDetailIntent.putExtra("mySiteLocation", currentSite.getLocation());
                 siteDetailIntent.putExtra("mySitePhoto", currentSite.getImageResourceId());
                 siteDetailIntent.putExtra("mySiteUrl", currentSite.getUrl());

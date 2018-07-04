@@ -30,16 +30,18 @@ import java.util.ArrayList;
  * {@link SiteAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
  * based on a data source, which is a list of {@link Site} objects.
  */
-public class SiteAdapter extends ArrayAdapter<Site>  {
+public class SiteAdapter extends ArrayAdapter<Site> {
 
-    /** Resource ID for the background color for this list of words */
+    /**
+     * Resource ID for the background color for this list of words
+     */
     private int mColorResourceId;
 
     /**
      * Create a new {@link SiteAdapter} object.
      *
      * @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param sites is the list of {@link Site}s to be displayed.
+     * @param sites   is the list of {@link Site}s to be displayed.
      */
     public SiteAdapter(Context context, ArrayList<Site> sites, int ColorResourceId) {
         super(context, 0, sites);
@@ -59,37 +61,34 @@ public class SiteAdapter extends ArrayAdapter<Site>  {
         // Get the {@link Site} object located at this position in the list
         Site currentSite = getItem(position);
 
-        // Find the TextView in the list_item.xml layout with the ID miwok_text_view.
-        TextView miwokTextView = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-        // Get the Miwok translation from the currentSite object and set this text on
-        // the Miwok TextView.
-        miwokTextView.setText(currentSite.getTitle());
+        // Find the TextView in the list_item.xml layout with the ID site_title_text_view.
+        TextView siteTitleTextView = (TextView) listItemView.findViewById(R.id.site_title_text_view);
+        // Get the Site Title from the currentSite object and set this text on
+        // the Site Title TextView.
+        siteTitleTextView.setText(currentSite.getSiteTitle());
 
-        // Find the TextView in the list_item.xml layout with the ID default_text_view.
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
-        // Get the default translation from the currentSite object and set this text on
-        // the default TextView.
-        defaultTextView.setText(currentSite.getLocation());
-
+        // Find the TextView in the list_item.xml layout with the ID site_loc_text_view.
+        TextView siteLocTextView = (TextView) listItemView.findViewById(R.id.site_loc_text_view);
+        // Get the site location from the currentSite object and set this text on
+        // the Site Location TextView.
+        siteLocTextView.setText(currentSite.getLocation());
 
 
         // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
 
 
-
-
         if (currentSite.hasImage()) {
-// Get the image resource ID from the currentSite object and set this image on
+            // Get the image resource ID from the currentSite object and set this image on
             // the default ImageView.
 
             imageView.setImageResource(currentSite.getImageResourceId());
-// make image visible
+            // make image visible
             imageView.setVisibility(View.VISIBLE);
 
 
         } else {
-// make image not visible and remove it entirely so it doesn't take up space in the layout
+            // make image not visible and remove it entirely so it doesn't take up space in the layout
             imageView.setVisibility(View.GONE);
         }
 
@@ -98,7 +97,7 @@ public class SiteAdapter extends ArrayAdapter<Site>  {
         //Find the color that the resource ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
 
-//Set the background color of the text container View
+        //Set the background color of the text container View
         textContainer.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in

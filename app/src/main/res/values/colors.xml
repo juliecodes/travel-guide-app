@@ -23,7 +23,6 @@
     <!-- Background color for app -->
     <color name="tan_background">#FFF7DA</color>
 
-
     <color name="category_murals">#0393B5</color>
     <color name="category_memorials">#C36100</color>
     <color name="category_art">#A3004D</color>
@@ -42,8 +41,6 @@
     <color name="category_phrases">#16AFCA</color>
 
     <color name="tab_text_color_default">#A8A19E</color>
-
-
 
     <color name="white">#FFFFFF</color>
 </resources>
