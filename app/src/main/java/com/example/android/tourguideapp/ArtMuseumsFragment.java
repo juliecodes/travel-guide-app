@@ -41,7 +41,7 @@ public class ArtMuseumsFragment extends Fragment {
         sites.add(new Site(getString(R.string.hirshhorn), getString(R.string.hirshhorn_loc), R.drawable.hirshhorn1, "https://hirshhorn.si.edu/", getString(R.string.hirshhorn_info)));
         sites.add(new Site(getString(R.string.nga), getString(R.string.nga_loc), R.drawable.nga1, "https://www.nga.gov/", getString(R.string.nga_info)));
         sites.add(new Site(getString(R.string.nmwa), getString(R.string.nmwa_loc), R.drawable.womensmuseum2, "https://nmwa.org/", getString(R.string.nmwa_info)));
-        sites.add(new Site(getString(R.string.phillips), getString(R.string.phillips_loc), R.drawable.phillipscollection1, "http://www.phillipscollection.org/", getString(R.string.nmwa_info)));
+        sites.add(new Site(getString(R.string.phillips), getString(R.string.phillips_loc), R.drawable.phillipscollection1, "http://www.phillipscollection.org/", getString(R.string.phillips_info)));
         sites.add(new Site(getString(R.string.renwick), getString(R.string.renwick_loc), R.drawable.renwickgallery, "https://americanart.si.edu/visit/renwick", getString(R.string.renwick_info)));
 
 
