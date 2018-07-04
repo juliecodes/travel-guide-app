@@ -19,7 +19,7 @@
 
         <activity
             android:name=".SiteDetailsPage"
-            android:label="Site Details" />
+            android:label="@string/site_details_page_title" />
 
     </application>
 

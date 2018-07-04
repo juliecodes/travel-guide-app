@@ -30,6 +30,8 @@ tools:context="com.example.android.tourguideapp.MainActivity">
     app:tabTextColor="@color/tab_text_color_default"
     app:tabIndicatorColor="@color/white"
     app:tabSelectedTextColor="@color/white"
+    app:tabMode="scrollable"
+    app:tabTextAppearance="@style/myTabStyle"
 
     />
 

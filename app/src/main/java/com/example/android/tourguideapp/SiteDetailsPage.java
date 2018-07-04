@@ -2,9 +2,13 @@ package com.example.android.tourguideapp;
 
 import android.app.ActionBar;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
 import android.text.util.Linkify;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -40,14 +44,18 @@ public class SiteDetailsPage extends AppCompatActivity {
         siteDetailsMoreInfo.setText(mySiteMoreInfo);
 
         String mySiteUrl = getIntent().getExtras().getString("mySiteUrl");
-        TextView siteDetailsUrl = (TextView) findViewById(R.id.site_detail_url_link);
-        siteDetailsUrl.setText(mySiteUrl);
-        Linkify.addLinks(siteDetailsUrl, Linkify.WEB_URLS);
+         TextView siteDetailsUrl = (TextView) findViewById(R.id.site_detail_url_link);
+         siteDetailsUrl.setText(mySiteUrl);
+         Linkify.addLinks(siteDetailsUrl, Linkify.WEB_URLS);
+
 
 
 
 
     }
+
+
+
 }
 
 

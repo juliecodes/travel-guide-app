@@ -14,14 +14,16 @@
 -->
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
-    <string name="app_name">Travel Guide App</string>
+    <string name="app_name">Washington DC Guide</string>
+    <string name="site_details_page_title">More Info</string>
+
     <string name="category_murals">Murals</string>
     <string name="category_art_places">Art</string>
   <string name="category_memorials">Memorials</string>
 <string name="category_unique">Unique DC</string>
 
+<!-- TITLE, LOCATION, MORE INFO -->
 
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

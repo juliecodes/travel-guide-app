@@ -15,51 +15,59 @@
         android:padding="40dp"
         android:scaleType="fitCenter"
 
-         />
+        />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="1"
-        android:gravity="top"
-        android:orientation="vertical">
+        android:layout_weight="1">
 
-        <TextView
-            android:id="@+id/site_detail_title_view"
-
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            tools:text="detail song title" />
+            android:layout_gravity="center_horizontal"
+            android:gravity="top"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/site_detail_location_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            tools:text="detail song artist"
+            <TextView
+                android:id="@+id/site_detail_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="detail site title" />
 
-            />
+            <TextView
+                android:id="@+id/site_detail_location_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                tools:text="detail site location"
 
-        <TextView
-            android:id="@+id/site_detail_more_info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            tools:text="more info"
+                />
 
-            />
+            <TextView
+                android:id="@+id/site_detail_more_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                tools:text="more info"
 
-        <TextView
-            android:id="@+id/site_detail_url_link"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            tools:text="url"
+                />
 
-            />
+            <TextView
+                android:id="@+id/site_detail_url_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                tools:text="url" />
 
-    </LinearLayout>
 
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
