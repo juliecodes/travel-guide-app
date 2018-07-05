@@ -19,17 +19,13 @@
     android:layout_margin="0dp"
     android:background="@color/tan_background"
     android:minHeight="@dimen/list_item_height"
-    android:orientation="horizontal"
-
-    >
+    android:orientation="horizontal">
 
     <ImageView
         android:id="@+id/image"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
-        android:scaleType="centerCrop"
-
-        />
+        android:scaleType="centerCrop" />
 
 
     <LinearLayout
@@ -41,9 +37,7 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@id/image"
         android:orientation="vertical"
-        android:paddingLeft="16dp"
-
-        >
+        android:paddingLeft="16dp">
 
         <TextView
             android:id="@+id/site_title_text_view"
@@ -75,9 +69,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="16dp"
-        android:src="@drawable/baseline_chevron_right_white_24"
-
-        />
+        android:src="@drawable/baseline_chevron_right_white_24" />
 
 
 </RelativeLayout>
